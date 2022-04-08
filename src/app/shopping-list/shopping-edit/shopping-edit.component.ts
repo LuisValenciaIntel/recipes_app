@@ -1,6 +1,7 @@
 import {Component, ElementRef, EventEmitter, Output, ViewChild} from '@angular/core';
 import { IngredientModel } from "../../shared/models/ingredient.model";
 import { ShoppingService } from "../shopping.service";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-shopping-edit',
@@ -10,7 +11,7 @@ import { ShoppingService } from "../shopping.service";
 export class ShoppingEditComponent {
   @ViewChild("nameInput") nameInputRef!: ElementRef;
   @ViewChild("amountInput") amountInputRef!: ElementRef;
-	
+
 	constructor(private shoppingService: ShoppingService) {
 	}
 
