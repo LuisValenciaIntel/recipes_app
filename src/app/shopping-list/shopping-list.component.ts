@@ -17,5 +17,9 @@ export class ShoppingListComponent implements OnInit {
 			this.shoppingService.ingredientAdded.subscribe(() => this.ingredients = this.shoppingService.getIngredients());
   }
 
+  ingredientSelected(i: number) {
+    this.shoppingService.selectIngredient(i);
+  }
+
 
 }
