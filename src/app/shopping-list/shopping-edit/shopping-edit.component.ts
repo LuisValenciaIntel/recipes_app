@@ -1,4 +1,4 @@
-import {Component, ElementRef, EventEmitter, OnDestroy, OnInit, Output, ViewChild} from '@angular/core';
+import {Component, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import { IngredientModel } from "../../shared/models/ingredient.model";
 import { ShoppingService } from "../shopping.service";
 import { NgForm } from "@angular/forms";
